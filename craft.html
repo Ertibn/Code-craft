@@ -81,55 +81,65 @@
             </div>
         </div>
     </section>
-    <section class="section 3">
-        <div>
-            <div>
-                <h2>Technology Radar 2024</h2>
-            </div>
-            <div>
-                <div>Current Trends</div>
-                <div>Tool Stack</div>
-                <div>Backend Pairings</div>
-            </div>
-            <div>
-                <h3>Rising vs Declining Technologies</h3>
-                <p><strong>Rising:</strong>Qwik (+320% growth), Astro (+280%), Svelte (+150%), HTMX (+200%)</p>
-                <p><strong>Declining:</strong>jQuery (-15% YOY), Angular (-8% YOY), Ember (-12% YOY)</p>
-                <p><strong>State of JS 2023 Highlights:</strong>
-                <ul>
-                    <li>TypeScript adoption reached 89% of developers</li>
-                    <li>Vite surpassed Webpack as most popular build tool</li>
-                    <li>Tailwind CSS usage grew to 65% of projects</li>
-                </ul>
-                </p>
-            </div>
-            <div>
-                <h3>Must-Know Tools</h3>
-                <ul>
-                    <li><strong>Frameworks:</strong>React, Vue, Svelte</li>
-                    <li><strong>Build Tools:</strong>Vite, esbuild, Parcel</li>
-                    <li><strong>Styling:</strong>Tailwind CSS, CSS Modules, SCSS</li>
-                    <li><strong>Design:</strong>Figma, Framer, Storybook</li>
-                </ul>
-                <h3>Emerging Technologies</h3>
-                <ul>
-                    <li><strong>Bun:</strong>Fast JavaScript runtime</li>
-                    <li><strong>WebAssembly:</strong>High-performance web apps</li>
-                    <li><strong>HTMX:</strong>HTML extensions for modern apps</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Popular Backend Pairings</h3>
-                <ul>
-                    <li><strong>Node.js:</strong>Fullstack JavaScript</li>
-                    <li><strong>Next.js:</strong>React framework with backend</li>
-                    <li><strong>Firebase:</strong>Serverless backend</li>
-                    <li><strong>Other Options:</strong>Django, Rails, Laravel</li>
-                </ul>
-            </div>
-        </div>
+<section class="section3" id="tech-radar">
+  <div class="radar-container">
 
-    </section>
+    <!-- Title -->
+    <h2>Technology Radar 2024</h2>
+
+    <!-- Tabs / Buttons -->
+    <div class="radar-tabs">
+      <button class="tab-btn active" data-tab="trends">Current Trends</button>
+      <button class="tab-btn" data-tab="tools">Tool Stack</button>
+      <button class="tab-btn" data-tab="backend">Backend Pairings</button>
+    </div>
+
+    <!-- TAB CONTENT : Current Trends -->
+    <div class="radar-content active" id="trends">
+      <h3>Rising vs Declining Technologies</h3>
+
+      <p><strong>Rising:</strong> Qwik (+320%), Astro (+280%), Svelte (+150%), HTMX (+200%)</p>
+      <p><strong>Declining:</strong> jQuery (-15%), Angular (-8%), Ember (-12%)</p>
+
+      <h4>State of JS 2023 Highlights</h4>
+      <ul>
+        <li>TypeScript adoption reached 89%</li>
+        <li>Vite surpassed Webpack</li>
+        <li>Tailwind CSS used in 65% of projects</li>
+      </ul>
+    </div>
+
+    <!-- TAB CONTENT : Tool Stack -->
+    <div class="radar-content" id="tools">
+      <h3>Must-Know Tools</h3>
+      <ul>
+        <li><strong>Frameworks:</strong> React, Vue, Svelte</li>
+        <li><strong>Build Tools:</strong> Vite, esbuild, Parcel</li>
+        <li><strong>Styling:</strong> Tailwind CSS, SCSS, CSS Modules</li>
+        <li><strong>Design:</strong> Figma, Framer, Storybook</li>
+      </ul>
+
+      <h3>Emerging Technologies</h3>
+      <ul>
+        <li><strong>Bun:</strong> Ultra-fast JS runtime</li>
+        <li><strong>WebAssembly:</strong> Near-native web performance</li>
+        <li><strong>HTMX:</strong> HTML-first modern apps</li>
+      </ul>
+    </div>
+
+    <!-- TAB CONTENT : Backend -->
+    <div class="radar-content" id="backend">
+      <h3>Popular Backend Pairings</h3>
+      <ul>
+        <li><strong>Node.js:</strong> Full-stack JavaScript</li>
+        <li><strong>Next.js:</strong> React + backend logic</li>
+        <li><strong>Firebase:</strong> Serverless backend</li>
+        <li><strong>Others:</strong> Django, Rails, Laravel</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
     <section class="section4">
         <div>
             <h2>Learning Roadmaps</h2>
