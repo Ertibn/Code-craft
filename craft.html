@@ -1,646 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeCraft | Frontend Development Hub</title>
-
-    <!-- Font Awesome Icons (WORKING) -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-        <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    
+    <!-----website link-->
+    <!--------https://zcodecrafthub.netlify.app/------>
+
     <header>
         <div class="container">
             <nav>
-                <div>
+                <div class="logo">
                     <span>CodeCraft</span>
-
                 </div>
-                <div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Industry Insights</a></li>
-                        <li><a href="#">Technology Radar</a></li>
-                        <li><a href="#">Learning Roadmaps</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Mentors</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-
-                </div>
-
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#insights">Industry Insights</a></li>
+                    <li><a href="#tech">Technology Radar</a></li>
+                    <li><a href="#learning">Learning Roadmaps</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#mentors">Mentors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
             </nav>
         </div>
     </header>
-    <section class="section1">
-        <div>
+
+    <section class="hero" id="home">
+        <div class="container">
             <h1>Master Frontend Development in 2024</h1>
-            <p>Join our community of developers and stay ahead with the latest trends, tools, and techniques in frontend
-                development.
-                Learn, build, and grow with CodeCraft.</p>
-            <a href=#>Start Learning</a>
+            <p>Join our community of developers and stay ahead with the latest trends, tools, and techniques in frontend development. Learn, build, and grow with CodeCraft.</p>
+            <a href="#learning" class="cta-button">Start Learning</a>
         </div>
-
     </section>
-    <section class="section2">
-        <div>
-            <h2>Industry Insights</h2>
-            <div>
-                <h3>Salary Trends</h3>
 
-
-                <p><strong>Junior Developer:</strong>$60k-$80k (US), £30k-£45k (UK), ₹6L-₹10L (India)
-
-                <p><strong>Mid-Level:</strong> $80k-$120k (US), £45k-£70k (UK), ₹10L-₹20L (India)</p>
-
-                <p><strong>Senior Developer:</strong>$120k-$180k (US), £70k-£100k (UK), ₹20L-₹35L (India)</p>
-
-                <p><strong>Freelance Rates:</strong>$50-$150/hr depending on experience and location
-                </p>
-            </div>
-            <div>
-                <h3>Company Demand</h3>
-                <p><strong>Top Hiring Companies:</strong>Google, Meta, Netflix, Shopify, Airbnb, Stripe</p>
-                <p><strong>Startups Hiring:</strong>Figma, Notion, Canva, Discord, Robinhood</p>
-                <p><strong>Most Sought-After Skills:</strong>
-                <ul>
-                    <li>React (72% of job postings)</li>
-                    <li>TypeScript (65%)</li>
-                    <li>CSS/SCSS (90%)</li>
-                    <li>Testing (Jest, Cypress - 58%)</li>
-                    <li>Accessibility (45%)</li>
-                </ul>
-                </p>
-
+    <section id="insights">
+        <div class="container">
+            <h2 class="section-title">Industry Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3>Salary Trends</h3>
+                    <p><strong>Junior Frontend Developer:</strong> &dollar;55k–&dollar;75k (US), &euro;28k–&euro;42k (EU)</p>
+                    <p><strong>Mid-Level Frontend:</strong> &dollar;75k–&dollar;110k (US), &euro;42k–&euro;65k (EU)</p>
+                    <p><strong>Senior Frontend Engineer:</strong> &dollar;110k–&dollar;160k (US), &euro;65k–&euro;95k (EU)</p>
+                    <p><strong>Freelance Rates:</strong> &dollar;40–&dollar;120/hr depending on experience and region</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Job Market</h3>
+                    <p><strong>Top Hiring Companies:</strong> Google, Meta, Shopify</p>
+                    <p><strong>Trending Startups:</strong> Figma, Notion</p>
+                    <p><strong>Key In-Demand Skills:</strong></p>
+                    <ul>
+                        <li>React.js / Next.js(72% of job postings)</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section3">
-        <div>
-            <div>
-                <h2>Technology Radar 2024</h2>
+
+    <section id="tech">
+        <div class="container">
+            <h2 class="section-title">Frontend Tech Radar 2024</h2>
+            <div class="tech-tabs">
+                <div class="tech-tab active" data-tab="trends">Trends</div>
+                <div class="tech-tab" data-tab="tools">Tools</div>
+                <div class="tech-tab" data-tab="deployment">Deployment</div>
             </div>
-            <div>
-                <div>Current Trends</div>
-                <div>Tool Stack</div>
-                <div>Backend Pairings</div>
-            </div>
-            <div>
-                <h3>Rising vs Declining Technologies</h3>
-                <p><strong>Rising:</strong>Qwik (+320% growth), Astro (+280%), Svelte (+150%), HTMX (+200%)</p>
-                <p><strong>Declining:</strong>jQuery (-15% YOY), Angular (-8% YOY), Ember (-12% YOY)</p>
-                <p><strong>State of JS 2023 Highlights:</strong>
+
+            <div class="tech-content active" id="trends">
                 <ul>
-                    <li>TypeScript adoption reached 89% of developers</li>
-                    <li>Vite surpassed Webpack as most popular build tool</li>
-                    <li>Tailwind CSS usage grew to 65% of projects</li>
-                </ul>
-                </p>
-            </div>
-            <div>
-                <h3>Must-Know Tools</h3>
-                <ul>
-                    <li><strong>Frameworks:</strong>React, Vue, Svelte</li>
-                    <li><strong>Build Tools:</strong>Vite, esbuild, Parcel</li>
-                    <li><strong>Styling:</strong>Tailwind CSS, CSS Modules, SCSS</li>
-                    <li><strong>Design:</strong>Figma, Framer, Storybook</li>
-                </ul>
-                <h3>Emerging Technologies</h3>
-                <ul>
-                    <li><strong>Bun:</strong>Fast JavaScript runtime</li>
-                    <li><strong>WebAssembly:</strong>High-performance web apps</li>
-                    <li><strong>HTMX:</strong>HTML extensions for modern apps</li>
+                    <li>React still leads, but Qwik and Svelte are rising</li>
+                    <li>Tailwind CSS is now the go-to for styling</li>
+                    <li>Vite and Turbopack are replacing Webpack</li>
                 </ul>
             </div>
-            <div>
-                <h3>Popular Backend Pairings</h3>
+
+            <div class="tech-content" id="tools">
                 <ul>
-                    <li><strong>Node.js:</strong>Fullstack JavaScript</li>
-                    <li><strong>Next.js:</strong>React framework with backend</li>
-                    <li><strong>Firebase:</strong>Serverless backend</li>
-                    <li><strong>Other Options:</strong>Django, Rails, Laravel</li>
+                    <li><strong>Frameworks:</strong> React, Next.js, Svelte</li>
+                    <li><strong>Styling:</strong> Tailwind CSS, SCSS</li>
+                    <li><strong>Build:</strong> Vite, Turbopack</li>
+                    <li><strong>Design:</strong> Figma, Storybook</li>
+                    <li><strong>Emerging:</strong> Bun, HTMX</li>
+                </ul>
+            </div>
+
+            <div class="tech-content" id="deployment">
+                <ul>
+                    <li>Next.js + Vercel for fullstack apps</li>
+                    <li>React + Netlify for Jamstack</li>
+                    <li>Astro/SvelteKit + Cloudflare for static sites</li>
                 </ul>
             </div>
         </div>
-
     </section>
-    <section class="section4">
-        <div>
-            <h2>Learning Roadmaps</h2>
 
-            <div>
-                <h3>Frontend in 2024 Path</h3>
-                <ol>
-                    <li>
-                        <strong>HTML/CSS Fundamentals:</strong>Semantic HTML, Flexbox, Grid
-                    </li>
-                    <li>
-                        <strong>JavaScript Core:</strong>ES6+, DOM Manipulation, Async JS
-                    </li>
-                    <li>
-                        <strong>React/Vue/Svelte:</strong>Components, State Management
-                    </li>
-                    <li>
-                        <strong>TypeScript:</strong>Static Typing for JavaScript
-                    </li>
-                    <li>
-                        <strong>Testing:</strong>Jest, React Testing Library, Cypress
-                    </li>
-                </ol>
-
-            </div>
-            <div>
-                <div>
+    <section id="learning">
+        <div class="container">
+            <h2 class="section-title">Learning Roadmaps</h2>
+            <div class="roadmap">
+                <div class="roadmap-step">
+                    <h3>Frontend in 2024 Path</h3>
+                    <ol>
+                        <li><strong>HTML/CSS Fundamentals:</strong> Semantic HTML, Flexbox, Grid</li>
+                        <li><strong>JavaScript Core:</strong> ES6+, DOM Manipulation, Async JS</li>
+                        <li><strong>React/Vue/Svelte:</strong> Components, State Management</li>
+                        <li><strong>TypeScript:</strong> Static Typing for JavaScript</li>
+                        <li><strong>Testing:</strong> Jest, React Testing Library, Cypress</li>
+                    </ol>
+                </div>
+                <div class="roadmap-step">
                     <h3>Specialization Paths</h3>
-                </div>
-                <div>
                     <details>
-                        <summary>
-                            <h4>UI/UX Focus</h4>
-                        </summary>
+                        <summary>UI/UX Focus</summary>
                         <ul>
-                            <li><strong>Figma for prototyping</strong></li>
-                            <li><strong>Framer for animations</strong></li>
-                            <li><strong>Design systems</strong></li>
-                            <li><strong>User research basics</strong></li>
+                            <li>Figma for prototyping</li>
+                            <li>Framer for animations</li>
+                            <li>Design systems</li>
+                            <li>User research basics</li>
                         </ul>
                     </details>
-                </div>
-                <div>
                     <details>
-                        <summary>
-                            <h4>Performance Optimization</h4>
-                        </summary>
+                        <summary>Performance Optimization</summary>
                         <ul>
-                            <li><strong>Web Vitals metrics</strong></li>
-                            <li><strong>Lighthouse audits</strong></li>
-                            <li><strong>Bundle size reduction</strong></li>
-                            <li><strong>Lazy loading</strong></li>
+                            <li>Web Vitals metrics</li>
+                            <li>Lighthouse audits</li>
+                            <li>Bundle size reduction</li>
+                            <li>Lazy loading</li>
                         </ul>
                     </details>
-                </div>
-                <div>
                     <details>
-                        <summary>
-                            <h4>Accessibility</h4>
-                        </summary>
+                        <summary>Accessibility</summary>
                         <ul>
-                            <li><strong>WCAG guidelines</strong></li>
-                            <li><strong>ARIA attributes</strong></li>
-                            <li><strong>Screen reader testing</strong></li>
-                            <li><strong>Color contrast</strong></li>
+                            <li>WCAG guidelines</li>
+                            <li>ARIA attributes</li>
+                            <li>Screen reader testing</li>
+                            <li>Color contrast</li>
                         </ul>
                     </details>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section5">
-        <div>
-            <h2>Frontend Courses</h2>
-            <div>
-                <div>
-                    <input type="text" placeholder="Search Courses">
+
+    <section id="courses">
+        <div class="container">
+            <h2 class="section-title">Frontend Courses</h2>
+            <div class="search-filter">
+                <div class="search-box">
+                    <input type="text" id="courseSearch" class="form-control" placeholder="Search courses...">
                 </div>
-                <div>
-                    <select name="" id="">
+                <div class="filter-select">
+                    <select id="courseFilter" class="form-control">
                         <option value="all">All Levels</option>
                         <option value="beginner">Beginner</option>
                         <option value="intermediate">Intermediate</option>
                         <option value="advanced">Advanced</option>
                     </select>
                 </div>
-                <div>
-                    <button>Add Courses</button>
-                </div>
+                <button id="addCourseBtn" class="btn">Add Course</button>
             </div>
-            <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Course</th>
-                            <th>Difficulty</th>
-                            <th>Duration</th>
-                            <th>Salary Potential</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        <tr>
-                            <td>HTML/CSS Fundamentals</td>
-                            <td><span>Beginner</span></td>
-                            <td>4 weeks</td>
-                            <td>$60k-$80k</td>
-                            <td><button>X</button></td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript Deep Dive</td>
-                            <td><span>Intermediate</span></td>
-                            <td>6 weeks</td>
-                            <td>$80k-$120k</td>
-                            <td><button>X</button></td>
-                        </tr>
-                        <tr>
-                            <td>React Masterclass</td>
-                            <td><span>Intermediate</span></td>
-                            <td>8 weeks</td>
-                            <td>$90k-$140k</td>
-                            <td><button>X</button></td>
-                        </tr>
-                        <tr>
-
-                            <td>Advanced TypeScript</td>
-                            <td><span>Advanced</span></td>
-                            <td>5 weeks</td>
-                            <td>$100k-$160k</td>
-                            <td><button>X</button></td>
-                        </tr>
-                        <tr>
-                            <td>Frontend Performance</td>
-                            <td><span>Advanced</span></td>
-                            <td>4 weeks</td>
-                            <td>$110k-$170k</td>
-                            <td><button>X</button></td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
+            <table class="courses-table">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Difficulty</th>
+                        <th>Duration</th>
+                        <th>Salary Potential</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="courseTableBody">
+                    <!-- Courses will be added here dynamically -->
+                </tbody>
+            </table>
         </div>
     </section>
-    <section class="section6">
-        <div>
-            <h2>Project Showcase</h2>
-            <div>
-                <div>
-                    <div><img
-                            src="https://img.freepik.com/premium-vector/twitter-logo-square-icon_444390-7003.jpg?w=900"
-                            alt="Twitter Clone" width="100px" height="100px">
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Project Showcase</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Twitter Clone">
                     </div>
-                    <div>Twitter UI Clone</h4>
+                    <div class="project-info">
+                        <h3>Twitter UI Clone</h3>
                         <p>Build a responsive Twitter interface with React and Tailwind CSS</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Tailwind</span>
+                            <span class="project-tag">Responsive</span>
+                        </div>
                     </div>
-                    <div>
-                        <span>React</span>
-                        <span>Tailwind</span>
-                        <span>Responsive</span>
-                    </div>
-
                 </div>
-                <div>
-                    <div><img
-                            src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-                            alt="Spotify Player" width="100px" height="100px">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Spotify Clone">
                     </div>
-                    <div>
-                        <h4>Spotify Player</h4>
+                    <div class="project-info">
+                        <h3>Spotify Player</h3>
                         <p>Music player application with Spotify API integration</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
                     </div>
-                    <div>
-                        <span>JavaScript</span>
-                        <span>API</span>
-                        <span>CSS</span>
-                    </div>
-
                 </div>
-                <div>
-                    <div><img
-                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                            alt="Spotify Player" width="100px" height="100px">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="E-commerce">
                     </div>
-                    <div>
-                        <h4>E-commerce Dashboard</h4>
+                    <div class="project-info">
+                        <h3>E-commerce Dashboard</h3>
                         <p>Admin dashboard for e-commerce with product management</p>
-                    </div>
-                    <div>
-                        <span>Vue</span>
-                        <span>Chart.js</span>
-                        <span>Firebase</span>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue</span>
+                            <span class="project-tag">Chart.js</span>
+                            <span class="project-tag">Firebase</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-   <section class="section7">
-        <h2>Meet Our Mentors</h2>
 
-        <div>
-            <h3>Fatiha Abdurahim</h3>
-            <p>Fullstack Developer</p>
-            <a href="https://github.com/FetuTechTamer" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/fethiya-abdurehim-3a0248331/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-        </div>
-
-        <div>
-            <h3>Dandi Hirko</h3>
-            <p>Fullstack Developer</p>
-            <a href="https://github.com/dandi" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/dandi/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-
-        <div>
-            <h3>Nafargi Damena</h3>
-            <p>Fullstack Developer & Visual Artist</p>
-            <a href="https://github.com/nafargi" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/nafargidamena/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-        </div>
-    </section>
-    <section class="section8">
-        <div>
-            <h2>Interview Preparation</h2>
-            <div>
-                <h3>Common Interview Questions</h3>
-                <ul>
-                    <li>Explain the Virtual DOM in React</li>
-                    <li>Difference between let, const, and var</li>
-                    <li>How would you optimize website performance?</li>
-                    <li>Explain CSS specificity</li>
-                    <li>What are React hooks and how do they work?</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Take-Home Tasks</h3>
-                <ul>
-                    <li>Build a responsive navbar with dropdown</li>
-                    <li>Create a todo app with localStorage
-                    </li>
-                    <li>Fetch and display data from a public API</li>
-                    <li>Implement a dark/light mode toggle</li>
-                    <li>Build a modal component</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class=" section9">
-        <div>
-            <h2>Resource Library</h2>
-            <div>
-                <h3>Free Tools</h3>
-                <p>&rarr; VS Code Extensions: Prettier, ESLint, Live Server</p>
-                <p>&rarr; Chrome DevTools: Lighthouse, Performance tab</p>
-                <p>&rarr; Design Assets: unDraw, FontAwesome, Google Fonts</p>
-                <p>&rarr; Code Sandboxes: CodePen, JSFiddle, CodeSandbox</p>
-
-            </div>
-            <div>
-                <h3>Paid Tools</h3>
-                <p>&rarr; IDEs: WebStorm, Sublime Text</p>
-                <p>&rarr; Design Tools: Figma Pro, Adobe XD</p>
-                <p>&rarr; Productivity: GitHub Copilot, Raycast</p>
-                <p>&rarr;Hosting: Vercel, Netlify Pro</p>
-            </div>
-            <div>
-                <h3>Cheatsheets</h3>
-                <p>&rarr; Flexbox/Grid Layouts</p>
-                <p>&rarr; JavaScript Array Methods</p>
-                <p>&rarr; Git Commands</p>
-                <p>&rarr;React Hooks</p>
-                <p>&rarr;CSS Selectors</p>
-            </div>
-        </div>
-    </section>
-    <section  class=" section10">
-        <div>
-            <div>
-                <h2>Interactive Elements</h2>
-                <div>
-                    <label for="">
-                        <h3>Salary Calculator</h3>
-                    </label>
-                    <select name="" id="">
-                        <option value="Junior">0-1 (Junior)</option>
-                        <option value="Mid-Level">2-4 (Mid-Level)</option>
-                        <option value="Senior">5+ (Senior)</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="">
-                        <h3>Location:</h3>
-                    </label>
-                    <select name="" id="">
-                        <option value="US">United State</option>
-                        <option value="Uk">United kingdom</option>
-                        <option value="Europe">Europe</option>
-                        <option value="India">India</option>
-                        <option value="global">Remot (global)</option>
-                    </select>
-                </div>
-                <div>
-                    <button>calculate</button>
-                </div>
-            </div>
-            <h3>Tech Quiz</h3>
-            <div>
-                <div>
-                    <p>Which framework suits your development style?</p>
-                </div>
-                <div>
-                    <div>
-                        <input type="radio" name="Quiz" id="option1" value="React">
-                        <label for="option1">I prefer a large ecosystem with many solutions</label>
+    <section id="mentors">
+        <div class="container">
+            <h2 class="section-title">Meet Our Mentors</h2>
+            <div class="mentors-grid">
+                <div class="mentor-card">
+                    <div class="mentor-img">
+                        <img src="feti.jpg" alt="Fatiha Abdurahim">
                     </div>
-                    <div>
-                        <input type="radio" name="Quiz" id="option2" value="React">
-                        <label for="option2">I want something balanced with good documentation</label>
+                    <div class="mentor-info">
+                        <h3>Fatiha Abdurahim</h3>
+                        <p>Fullstack developer</p>
+                        <div class="mentor-links">
+                            <a href="https://github.com/FetuTechTamer" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/fethiya-abdurehim-3a0248331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
                     </div>
-                    <div>
-                        <input type="radio" name="Quiz" id="option3" value="React">
-                        <label for="option3">I prefer minimal boilerplate and simplicity</label>
-                    </div>
-
                 </div>
-                <div>
-                    <button>summit</button>
+                <div class="mentor-card">
+                    <div class="mentor-img">
+                        <img src="dandi.jpg" alt="Dandi Hirko">
+                    </div>
+                    <div class="mentor-info">
+                        <h3>Dandi Hirko</h3>
+                        <p>Fullstack developer</p>
+                        <div class="mentor-links">
+                            <a href="https://github.com/dandi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/dandi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mentor-card">
+                    <div class="mentor-img">
+                        <img src="nafi.jpg" alt="Nafargi Damena">
+                    </div>
+                    <div class="mentor-info">
+                        <h3>Nafargi Damena</h3>
+                        <p>Fullstack developer and Visual Artist</p>
+                        <div class="mentor-links">
+                            <a href="https://github.com/nafargi" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/nafargidamena" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class=" section11">
-        <div>
-            <h2>Frontend To-Do List</h2>
-            <div>
-                <div>
+
+    <section id="interactive">
+        <div class="container">
+            <h2 class="section-title">Interactive Elements</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3>Salary Calculator</h3>
+                    <div class="calculator">
+                        <div class="form-group">
+                            <label for="experience">Years of Experience:</label>
+                            <select id="experience" class="form-control">
+                                <option value="0-1">0-1 (Junior)</option>
+                                <option value="2-4">2-4 (Mid-Level)</option>
+                                <option value="5+">5+ (Senior)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location:</label>
+                            <select id="location" class="form-control">
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="eu">Europe</option>
+                                <option value="india">India</option>
+                                <option value="remote">Remote (Global)</option>
+                            </select>
+                        </div>
+                        <button id="calculateBtn" class="btn">Calculate</button>
+                        <div class="result" id="salaryResult"></div>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <h3>Tech Quiz</h3>
+                    <div class="quiz-container">
+                        <div class="quiz-question">
+                            <p>Which framework suits your development style?</p>
+                        </div>
+                        <div class="quiz-options">
+                            <div class="quiz-option">
+                                <input type="radio" name="quiz" id="option1" value="react">
+                                <label for="option1">I prefer a large ecosystem with many solutions</label>
+                            </div>
+                            <div class="quiz-option">
+                                <input type="radio" name="quiz" id="option2" value="vue">
+                                <label for="option2">I want something balanced with good documentation</label>
+                            </div>
+                            <div class="quiz-option">
+                                <input type="radio" name="quiz" id="option3" value="svelte">
+                                <label for="option3">I prefer minimal boilerplate and simplicity</label>
+                            </div>
+                        </div>
+                        <button id="quizSubmit" class="btn">Submit</button>
+                        <div class="quiz-result" id="quizResult"></div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <section id="todo">
+        <div class="container">
+            <h2 class="section-title">Frontend To-Do List</h2>
+            <div class="todo-container">
+                <div class="todo-header">
                     <h3>My Learning Tasks</h3>
+                    <div>
+                        <input type="text" id="todoInput" class="form-control" placeholder="Add a new task...">
+                        <button id="addTodoBtn" class="btn">Add</button>
+                    </div>
                 </div>
-                <div>
-                    <input type="text"> placeholder="Add a new task...">
-                </div>
-                <div>
-                    <button>Add</button>
-                </div>
+                <ul class="todo-list" id="todoList">
+                    <!-- To-do items will be added here dynamically -->
+                </ul>
             </div>
         </div>
     </section>
-    <section class=" section12">
-        <div>
-            <h2>Developer Testimonials</h2>
-            <div>
-                <div>
-                    <p>laudantium enim quasi est quidem magnam voluptate ipsam eos tempora quo necessitatibus dolor quam
-                        autem quasi reiciendis
-                        et nam sapiente accusantium</p>
-                </div>
-                <div>
-                    <div>
-                        <img src="https://i.pravatar.cc/100?img=1" alt="" width 80px>
-                    </div>
-                    <div>
-                        <h4>id labore ex et quam laborum</h4>
-                        <p>Frontend Developer</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <p>est natus enim nihil est dolore omnis voluptatem numquam et omnis occaecati quod ullam at
-                                voluptatem error expedita
-                                pariatur nihil sint nostrum voluptatem reiciendis et</p>
-                        </div>
-                        <div>
-                            <div>
-                                <img src="https://i.pravatar.cc/100?img=2" alt="" width 80px>
-                            </div>
-                            <div>
-                                <h4>quo vero reiciendis velit similique earum</h4>
-                                <p>Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <p>quia molestiae reprehenderit quasi aspernatur aut expedita occaecati aliquam eveniet
-                            laudantium omnis quibusdam delectus
-                            saepe quia accusamus maiores nam est cum et ducimus et vero voluptates excepturi deleniti
-                            ratione</p>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="https://i.pravatar.cc/100?img=3" alt="" width 80px>
-                        </div>
-                        <div>
-                            <h4>odio adipisci rerum aut animi
-                                odio adipisci rerum aut animi</h4>
-                            <p>Frontend Developer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </section>
-    <section class=" section13">
-        <div>
-            <h2>Frontend Development Video</h2>
-            <div>
-                <iframe width="652" height="367" src="https://www.youtube.com/embed/Tef1e9FiSR0"
-                    title="The Complete Frontend Developer Roadmap" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Developer Testimonials</h2>
+            <div class="testimonials" id="testimonialsContainer">
+                <!-- Testimonials will be loaded from API -->
             </div>
         </div>
     </section>
-  <section class="section14">
-    <div >
-        <h2>Contact Us</h2>
 
-        <form action="" method="post">
-            
-            <div>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required>
+    <section id="multimedia">
+        <div class="container">
+            <h2 class="section-title">Frontend Development Video</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/Tef1e9FiSR0?si=3c8LnLWHTy4EqjOL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+        </div>
+    </section>
 
-            <div>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
-
-            <div>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-
-            <div>
-                <input type="submit" value="Send Message">
-            </div>
-
-        </form>
-    </div>
-</section>
+        </div>
+    </section>
 
     <footer>
-        <div>
-            <div>
-                <h3>CodeCraft</h3>
-                <p>Your premier destination for frontend development resources, learning, and community.
-                </p>
-                <div>
-                    
-                   
-   <ul>
-            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>CodeCraft</h3>
+                    <p>Your premier destination for frontend development resources, learning, and community.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h3>Quick Links</h3>
-                <div>
-                    <ul>
-                        <li><a href="https://zcodecrafthub.netlify.app/#home">Home</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#insights">Industry Insights</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#tech">Technology Radar</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#learning">Learning Roadmaps</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#projects">Projects</a></li>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#insights">Industry Insights</a></li>
+                        <li><a href="#tech">Technology Radar</a></li>
+                        <li><a href="#learning">Learning Roadmaps</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#resources">Resource Library</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#mentors">Mentors</a></li>
+                        <li><a href="#interview">Interview Prep</a></li>
+                        <li><a href="#interactive">Interactive Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
-            <div>
-                <h3>Resources</h3>
-                <div>
-                    <ul>
-                        <li><a href="https://zcodecrafthub.netlify.app/#resources">Resource Library</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#blog">Blog</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#mentors">Mentors</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#interview">Interview Prep</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#interactive">Interactive Tools</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <h3>Legal</h3>
-                <div>
-                    <ul>
-                        <li><a href="https://zcodecrafthub.netlify.app/#">Privacy Policy</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#">Terms of Service</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#">Cookie Policy</a></li>
-                        <li><a href="https://zcodecrafthub.netlify.app/#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div>
-                <p>© 2024 CodeCraft. All rights reserved</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeCraft. All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
-
 </html>
