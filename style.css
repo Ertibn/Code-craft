@@ -129,7 +129,7 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
+            color: rgba(255, 255, 255, 0.911);
             padding: 5rem 0;
             text-align: center;
         }
